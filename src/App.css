@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@300;400;500;600;700;900&display=swap');
+
+:root{
+    --red: #D01C28;
+    --grey: #5A5959;
+    --dark-grey: #2e2e2e;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+nav ul.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    color: var(--dark-grey);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/* nav button.nav-btn-login, .hero-btn button.hero-btn-shop {
+    all: unset;
+    padding: 6px 16px;
+    background-color: var(--red);
+    color: #fff;
+    width: 75px;
+    height: 32px;
+    font-weight: 500;
+    text-align: center;
+} */
+
+button{
+    all: unset;
+    padding: 6px 16px;
+    background-color: var(--red);
+    color: #fff;
+    width: 90px;
+    height: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+/* Navigation End */
+
+/* Hero Section */
+main.hero {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+}
+main.hero .hero-content h1 {
+    color: var(--black);
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 102px;
+}
+main.hero .hero-content p {
+    color: var(--grey);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 404px;
+    margin: 25px 0px;
+}
+.hero-btn {
+    display: flex;
+    gap: 50px;
+}
+button.hero-btn-category {
+    background: transparent;
+    border: 1px solid var(--grey);
+    color: var(--grey);
+}
+.hero-content .shopping-txt p {
+    font-weight: 400 !important;
+}
+.hero-content .shopping-icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
